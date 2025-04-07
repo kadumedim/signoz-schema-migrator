@@ -1,4 +1,4 @@
-FROM signoz/signoz-schema-migrator:latest
+FROM signoz/signoz-schema-migrator:main
 
 # Install dependencies for DNS resolution
 RUN apt-get update && \
