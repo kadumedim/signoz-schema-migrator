@@ -2,9 +2,7 @@ FROM signoz/signoz-schema-migrator:main
 
 # Install dependencies for DNS resolution
 RUN apt-get update && \
-    apt-get install -y dnsutils iproute2 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y dnsutils iproute2
 
 COPY wrapper.sh /wrapper.sh
 
